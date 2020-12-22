@@ -63,4 +63,4 @@ array1[i], array1[min_idx] = array1[min_idx], array1[i]
 ```
 파이썬에서는 두 변수의 값을 쉽게 바꿔주는 swap기능을 제공한다
 
-위의 코드는 array1[i]의 array1[min_idx]의 값을 바꾸게 된다
+위의 코드는 array1[i]과 array1[min_idx]의 값을 바꾸게 된다
