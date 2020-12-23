@@ -3,7 +3,6 @@ def binarySearch(array,target,start,end):
         return None
     middle=(start+end)//2
    
-
     if array[middle]==target:
         return middle
 
