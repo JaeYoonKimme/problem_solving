@@ -21,14 +21,12 @@ heady=1
 
 time=0
 head_history=[]
-dirx=[1,0,-1,0]
-diry=[0,1,0,-1]
+dirx=[0,1,0,-1]
+diry=[1,0,-1,0]
 dir_index=0
 while True:
     time+=1
     
-    
-        
     data[headx][heady]=2 #tail
     head_history.append((headx,heady))
 
@@ -46,16 +44,17 @@ while True:
         print(time)
         #print("snake met tail")
         break
-        
+    
     #check if snake ate apple
     if data[headx][heady]==1:
         data[headx][heady]=0
-    
+        
+
     else:
         a,b=head_history[0]
         data[a][b]=0
         head_history.remove(head_history[0])
-    
+        
 
     #switch direction
     if len(turn)!=0 and (turn[0][0]==time):
@@ -67,7 +66,6 @@ while True:
             dir_index%=4
         turn.remove(turn[0])
 
-#꼬리부분에 대한 처리가 제대로 이루어지지 않고있음 
 
 
     
