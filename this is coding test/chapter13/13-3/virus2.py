@@ -35,7 +35,7 @@ while q:
                 q.append((v,time+1,nx,ny))
 
 print(tube[target_x-1][target_y-1])
-
+ 
 
 
 
