@@ -13,9 +13,7 @@ def isStudentHideWell(row,col,hall,direction):
         return True
     if hall[row][col]=="S":
         return False
-    #if hall[row][col]=="T":
-    #    return True
-    
+
     if direction==0:
         if not isStudentHideWell(row,col+1,hall,1):
             return False
@@ -65,7 +63,6 @@ for construct in newWall:
         result=True
         
         
-
 
 if result==True:
     print("YES")
